@@ -123,6 +123,12 @@ checks.
 The preview images in `assets/` are rebuilt separately. For more information,
 see [Rebuild the previews](PREVIEWS.md#rebuild-the-previews).
 
+## Compatibility
+
+The themes target Herdr 0.1.16. The token mapping follows the `theme()`
+definition in that release. If a later release adds or renames theme tokens,
+update the mapping in `scripts/generate.py` and regenerate the theme files.
+
 ## Palette mapping
 
 The themes map each Herdr token to a Catppuccin color. The following table
