@@ -1,0 +1,23 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  themes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check generated themes
+        run: python3 scripts/generate.py --check
+      - name: Run generator tests
+        run: python3 -m unittest discover -s tests
+      - name: Check documentation links
+        run: python3 scripts/check_links.py
