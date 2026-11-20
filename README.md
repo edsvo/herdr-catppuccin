@@ -243,6 +243,11 @@ cannot expose the recommended roles.
   Latte selection background. Secondary `muted` and `dim` text on a selected
   row is lower. The Changes panel uses `dim` for the path.
 
+## Support
+
+Open an issue to report a problem with a theme. Include the flavor name and a
+screenshot if you can. This project does not accept pull requests.
+
 ## License
 
 This port is released under the MIT License. See the [LICENSE
